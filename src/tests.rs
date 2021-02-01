@@ -14,3 +14,10 @@ fn fizbuzz_multiples_of_3_print_fizz() {
     assert_eq!("Fizz", crate::fizzbuzz(21));
     assert_eq!("Fizz", crate::fizzbuzz(666));
 }
+
+#[test]
+fn fizbuzz_multiples_of_5_print_buzz() {
+    assert_eq!("Buzz", crate::fizzbuzz(5));
+    assert_eq!("Buzz", crate::fizzbuzz(35));
+    assert_eq!("Buzz", crate::fizzbuzz(665));
+}
