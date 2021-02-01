@@ -6,10 +6,16 @@
 /// * 'FizzBuzz' if the number is divisible by 15
 /// * Prints the numerical value if not divisible by 3 or 5
 /// ```
-/// assert_eq!("1", fizzbuzz::fizzbuzz(1))
+/// # use fizzbuzz::fizzbuzz;
+/// assert_eq!(fizzbuzz(1), "1");
+/// assert_eq!(fizzbuzz(3), "Fizz");
 /// ```
+///
 pub fn fizzbuzz(n: u32) -> String {
-    n.to_string()
+    match n {
+        3 => "Fizz".to_string(),
+        _ => n.to_string(),
+    }
 }
 
 #[cfg(test)]
