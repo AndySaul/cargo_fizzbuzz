@@ -35,3 +35,11 @@ fn fizbuzz_multiples_of_15_print_fizzbuzz() {
 fn zero_is_a_valid_input() {
     assert_eq!("FizzBuzz", fizzbuzz(0));
 }
+
+#[test]
+fn negative_numbers_are_valid_inputs() {
+    assert_eq!("-1", fizzbuzz(-1));
+    assert_eq!("Fizz", fizzbuzz(-3));
+    assert_eq!("Buzz", fizzbuzz(-5));
+    assert_eq!("FizzBuzz", fizzbuzz(-15));
+}

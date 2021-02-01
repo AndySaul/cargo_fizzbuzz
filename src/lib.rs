@@ -13,7 +13,7 @@
 /// assert_eq!(fizzbuzz(15), "FizzBuzz");
 /// ```
 ///
-pub fn fizzbuzz(n: u32) -> String {
+pub fn fizzbuzz(n: i32) -> String {
     match n {
         _ if n % 15 == 0 => "FizzBuzz".to_string(),
         _ if n % 5 == 0 => "Buzz".to_string(),
