@@ -13,7 +13,7 @@
 ///
 pub fn fizzbuzz(n: u32) -> String {
     match n {
-        3 => "Fizz".to_string(),
+        _ if n % 3 == 0 => "Fizz".to_string(),
         _ => n.to_string(),
     }
 }

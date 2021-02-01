@@ -9,6 +9,8 @@ fn fizbuzz_2_prints_2() {
 }
 
 #[test]
-fn fizbuzz_3_prints_fizz() {
+fn fizbuzz_multiples_of_3_print_fizz() {
     assert_eq!("Fizz", crate::fizzbuzz(3));
+    assert_eq!("Fizz", crate::fizzbuzz(21));
+    assert_eq!("Fizz", crate::fizzbuzz(666));
 }
