@@ -11,21 +11,21 @@ fn fizbuzz_2_prints_2() {
 }
 
 #[test]
-fn fizbuzz_multiples_of_3_print_fizz() {
+fn multiples_of_3_print_fizz() {
     assert_eq!("Fizz", fizzbuzz(3));
     assert_eq!("Fizz", fizzbuzz(21));
     assert_eq!("Fizz", fizzbuzz(666));
 }
 
 #[test]
-fn fizbuzz_multiples_of_5_print_buzz() {
+fn multiples_of_5_print_buzz() {
     assert_eq!("Buzz", fizzbuzz(5));
     assert_eq!("Buzz", fizzbuzz(35));
     assert_eq!("Buzz", fizzbuzz(665));
 }
 
 #[test]
-fn fizbuzz_multiples_of_15_print_fizzbuzz() {
+fn multiples_of_15_print_fizzbuzz() {
     assert_eq!("FizzBuzz", fizzbuzz(15));
     assert_eq!("FizzBuzz", fizzbuzz(45));
     assert_eq!("FizzBuzz", fizzbuzz(750));
