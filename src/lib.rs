@@ -1,5 +1,5 @@
 /// # fizzbuzz
-/// 
+///
 /// Prints the fizzbuzz value of the given number:
 /// * 'Fizz' if the number is divisible by 3
 /// * 'Buzz' if the number is divisible by 5
@@ -11,3 +11,6 @@
 pub fn fizzbuzz(n: u32) -> String {
     n.to_string()
 }
+
+#[cfg(test)]
+mod tests;
